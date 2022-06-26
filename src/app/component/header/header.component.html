@@ -1,0 +1,28 @@
+<header>
+  <div class="navbar bg-primary shadow-sm">
+    <div class="navbar-brand align-item-centre d-flex">
+      <i style="font-size: 40px; color: white" class="fas fa-shipping-fast"  routerLink="/products">&nbsp;
+
+      </i>
+      <strong style="font-size: 30px; color:white" routerLink="/products">Shop For Home</strong>
+
+      <div class="formgroup">
+        <input type="text" class="form-control" placeholder="Search Products">
+        <span class="fas fa-search search-icon" style="margin-right: 10px;"></span>
+      </div>
+    </div>
+
+    <button routerLink="login" style="float: right;" class="btn btn-success">Login</button>
+
+    <button routerLink="wishlist" class="btn btn-primary">
+      <i style="font-size: 30px; color: white" class="fas fa-heart">
+        <div style="font-size: 10px;" class="badge bg-danger">{{totalWishedItem}}</div>
+      </i>
+    </button>
+    <button routerLink="cart" class="btn btn-primary">
+      <i style="font-size: 30px; color: white" class="fas fa-cart-plus">
+        <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+      </i>
+    </button>
+  </div>
+</header>

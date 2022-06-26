@@ -1,0 +1,38 @@
+<div class="col-md-6 col-sm-12">
+  <div class="search-form">
+     <form [formGroup]="searchForm"  (ngSubmit)="getProducts()" name="form1">
+        <div class="form-group">
+           <input formControlName="category" type="text" class="form-control" required minlength="4" placeholder="Type Search Category">
+        </div>
+        <button type="submit" class="btn btn-success" >Get Products</button>
+     </form>
+  </div>
+</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Sr. No.</th>
+      <th scope="col">Product Id</th>
+      <th scope="col">Product Name</th>
+      <th scope="col">Description</th>
+      <th scope="col">Price</th>
+      <th scope="col">Stock</th>
+      <th scope="col">Image URL</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of retData; let i = index">
+      <td>{{i+1}}</td>
+      <td>{{product.productId}}</td>
+      <td>{{product.name}}</td>
+      <td>{{product.description}}</td>
+      <td>{{product.price}}</td>
+      <td>{{product.stock}}</td>
+      <td>{{product.imageURL}}</td>
+      <td>Edit</td>
+      <td>Delete</td>
+   </tr>
+  </tbody>
+</table>
