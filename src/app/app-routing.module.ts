@@ -8,6 +8,7 @@ import {LoginComponent} from './component/login/login.component'
 import { SignupComponent } from './component/signup/signup.component';
 import { UsersComponent } from './component/manage/users/users.component';
 import { AdminComponent } from './component/admin/admin.component';
+import { EditComponent } from './component/manage/editProduct/edit.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'products' },
@@ -19,7 +20,8 @@ const routes: Routes = [
   // {path:'', redirectTo: 'products',pathMatch: 'full'},
   {path:'products', component: ProductsComponent},
   {path:'cart' , component: CartComponent},
-  {path:'wishlist' , component: WishComponent}
+  {path:'wishlist' , component: WishComponent},
+  {path:'editproduct/:id' , component: EditComponent}
 
 ];
 

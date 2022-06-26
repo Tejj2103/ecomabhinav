@@ -31,8 +31,8 @@
       <td>{{product.price}}</td>
       <td>{{product.stock}}</td>
       <td>{{product.imageURL}}</td>
-      <td>Edit</td>
-      <td>Delete</td>
+      <td><button id={{product.productId}} class="edit" (click)="openPopup($event)">edit</button></td>
+      <td><button>delete</button></td>
    </tr>
   </tbody>
 </table>

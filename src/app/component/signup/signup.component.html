@@ -1,5 +1,5 @@
 <div class="main">
-  <div class="col-md-6 col-sm-12">
+  <div class="content col-md-6 col-sm-12">
     <div class="login-main-text">
       <h2 style="text-align:center">Looks like you are new here!</h2>
       <p style="text-align:center">Sign up here to get started</p>
@@ -14,8 +14,10 @@
           <label for="password">Password</label>
           <input formControlName="password" type="password" class="form-control" required minlength="4" placeholder="Enter your password" />
         </div>
-        <button type="submit" class="btn" style="background-color: orangered; color: white" > Sign Up </button>
-        <h2 style="text-align:center">OR</h2>
+        <div class="singup">
+          <button type="submit" class="btn" style="background-color: orangered; color: white" > Sign Up </button>
+        </div>
+       <h2 style="text-align:center">OR</h2>
         <a style="display: flex; justify-content: center" routerLink="/login"> Existing User? Log in </a>
       </form>
     </div>

@@ -15,6 +15,7 @@ import { UsersComponent } from './component/manage/users/users.component';
 import { ManageProductsComponent } from './component/manage/products/products.component';
 import { AdminComponent } from './component/admin/admin.component';
 import { WishComponent } from './component/wishlist/wish.component';
+import { EditComponent } from './component/manage/editProduct/edit.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { WishComponent } from './component/wishlist/wish.component';
     SignupComponent,
     UsersComponent,
     ManageProductsComponent,
-    AdminComponent
+    AdminComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,
